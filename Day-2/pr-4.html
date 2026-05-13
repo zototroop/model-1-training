@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3k2ORyjKmNj93JNic0Hiql74lW3nCXnzzZA&s" alt="">
+        <h1>Silver Oak University</h1>
+    </header>
+    <h2 align="center">Student Registration</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Contact</a>
+    </nav>
+    <br>
+    <main>
+        <article>
+            <form style="border:2px solid gray; padding:20px;">
+                <table cellpadding="8">
+                    <tr>
+                        <td>Name :</td>
+                        <td><input type="text" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Enrollment :</td>
+                        <td><input type="number" name="enrollment"></td>
+                    </tr>
+                    <tr>
+                        <td>Branch :</td>
+                        <td>
+                            <select>
+                                <option>Select Branch</option>
+                                <option>Computer</option>
+                                <option>IT</option>
+                                <option>Mechanical</option>
+                                <option>Civil</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Division :</td>
+                        <td><input type="text" maxlength="1"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender :</td>
+                        <td>
+                            <input type="radio" name="gender"> Male
+                            <input type="radio" name="gender"> Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mobile No :</td>
+                        <td><input type="tel"></td>
+                    </tr>
+                    <tr>
+                        <td>Email ID :</td>
+                        <td><input type="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Password :</td>
+                        <td><input type="password"></td>
+                    </tr>
+                    <tr>
+                        <td>Photo :</td>
+                        <td><input type="file"></td>
+                    </tr>
+                    <tr>
+                        <td>Remarks :</td>
+                        <td><textarea rows="4"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- Inline CSS -->
+                            <input type="submit" value="Submit"
+                                style="background-color:green; color:white;">
+                        </td>
+                        <td>
+                            <!-- Inline CSS -->
+                            <input type="reset" value="Clear"
+                                style="background-color:red; color:white;">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </article>
+    </main>
+    <footer>
+        <p>© 2026 Student Registration System</p>
+    </footer>
+</body>
+</html>  
