@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animated Resume</title>
+
+    <style>
+
+        body{
+            margin:0;
+            font-family:Arial, sans-serif;
+
+            background:linear-gradient(to right, #74ebd5, #ACB6E5);
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        .resume{
+            width:700px;
+            background:white;
+            padding:30px;
+            border-radius:20px;
+
+            box-shadow:0px 0px 20px gray;
+
+            animation:slide 2s ease;
+        }
+
+        @keyframes slide{
+
+            from{
+                transform:translateY(-100px);
+                opacity:0;
+            }
+
+            to{
+                transform:translateY(0);
+                opacity:1;
+            }
+        }
+
+        h1{
+            text-align:center;
+            color:darkblue;
+        }
+
+        h2{
+            color:#444;
+            border-bottom:2px solid gray;
+            padding-bottom:5px;
+        }
+
+        p, li{
+            font-size:18px;
+        }
+
+        ul{
+            padding-left:20px;
+        }
+
+        .resume:hover{
+            transform:scale(1.03);
+            transition:1s;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="resume">
+
+        <h1>Khushit Modi</h1>
+
+        <p><b>Email:</b> zototroop@gmail.com</p>
+        <p><b>Phone:</b> +91 7435962267</p>
+        <p><b>Address:</b> Ahmedabad, Gujarat</p>
+
+        <h2>Career Objective</h2>
+
+        <p>
+            To obtain a challenging position where I can improve my skills
+            and contribute to organizational success.
+        </p>
+
+        <h2>Education</h2>
+
+        <ul>
+            <li>B.Tech in Computer Science Engineering (CSE)</li>
+            <li>12th Passed</li>
+            <li>10th Passed</li>
+        </ul>
+
+        <h2>Skills</h2>
+
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>C Programming</li>
+        </ul>
+
+        <h2>Projects</h2>
+
+        <ul>
+            <li>Portfolio Website</li>
+            <li>Student Management System</li>
+        </ul>
+
+        <h2>Hobbies</h2>
+
+        <ul>
+            <li>beatboxing</li>
+            <li>singing</li>
+            <li>gaming</li>
+        </ul>
+
+    </div>
+
+</body>
+</html>
