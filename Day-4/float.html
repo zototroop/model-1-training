@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Float Layout</title>
+
+    <style>
+
+        body{
+            font-family:Arial, sans-serif;
+            background:#f0f0f0;
+        }
+
+        .container{
+            width:85%;
+            margin:40px auto;
+            background:white;
+            padding:20px;
+            border:2px solid gray;
+            border-radius:10px;
+        }
+
+        .photo{
+            float:right;
+            margin-left:20px;
+        }
+
+        .photo img{
+            width:260px;
+            height:180px;
+            border-radius:12px;
+        }
+
+        .text{
+            font-size:20px;
+            line-height:1.8;
+            color:#333;
+        }
+
+        .clear{
+            clear:both;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="photo">
+
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Students">
+
+        </div>
+
+        <div class="text">
+
+            <h2>Learning Web Development</h2>
+
+            <p>
+                Web development is the process of creating websites
+                using HTML, CSS and JavaScript. CSS float property helps
+                to align images and text in an attractive way.
+            </p>
+
+            <p>
+                In this example, the image is floated to the right side
+                and the text wraps around it automatically.
+            </p>
+
+        </div>
+
+        <div class="clear"></div>
+
+    </div>
+
+</body>
+</html>
