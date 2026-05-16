@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Hover Effect</title>
+
+    <style>
+        body{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            background:#f2f2f2;
+        }
+
+        .image-box{
+            width:300px;
+            overflow:hidden;
+            border-radius:15px;
+        }
+
+        .image-box img{
+            width:100%;
+            transition:0.5s;
+        }
+
+        .image-box img:hover{
+            transform:scale(1.1);
+            filter:brightness(70%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="image-box">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+             alt="Nature Image">
+    </div>
+
+</body>
+</html>
