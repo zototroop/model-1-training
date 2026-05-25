@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Search Table</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex justify-center items-center min-h-screen p-6">
+
+  <div class="w-full max-w-4xl bg-white p-6 rounded-2xl shadow-xl">
+
+    <!-- Search Input -->
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search table..."
+      class="w-full border-4 border-blue-500 rounded-xl px-5 py-3 text-lg mb-6 outline-none"
+      onkeyup="searchTable()"
+    >
+
+    <!-- Table -->
+    <table class="w-full border-collapse overflow-hidden rounded-xl">
+
+      <!-- Header -->
+      <thead>
+        <tr class="bg-blue-700 text-white">
+          <th class="p-4 text-left">Name</th>
+          <th class="p-4 text-left">Role</th>
+          <th class="p-4 text-left">Location</th>
+        </tr>
+      </thead>
+
+      <!-- Body -->
+      <tbody id="tableBody">
+
+        <tr class="border-b">
+          <td class="p-4">John Doe</td>
+          <td class="p-4">Developer</td>
+          <td class="p-4">USA</td>
+        </tr>
+
+        <tr class="border-b">
+          <td class="p-4">Sarah Smith</td>
+          <td class="p-4">Designer</td>
+          <td class="p-4">Canada</td>
+        </tr>
+
+        <tr class="border-b">
+          <td class="p-4">Michael Lee</td>
+          <td class="p-4">Manager</td>
+          <td class="p-4">UK</td>
+        </tr>
+
+        <tr>
+          <td class="p-4">Emma Wilson</td>
+          <td class="p-4">Tester</td>
+          <td class="p-4">Australia</td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function searchTable() {
+
+      let input = document.getElementById("searchInput").value.toLowerCase();
+
+      let rows = document.querySelectorAll("#tableBody tr");
+
+      rows.forEach(row => {
+
+        let text = row.innerText.toLowerCase();
+
+        if (text.includes(input)) {
+          row.style.display = "";
+        } else {
+          row.style.display = "none";
+        }
+
+      });
+    }
+  </script>
+
+</body>
+</html>

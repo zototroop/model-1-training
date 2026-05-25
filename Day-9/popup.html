@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup Boxes</title>
+
+  <style>
+    body{
+      margin:0;
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:linear-gradient(to right,#00c6ff,#00f2fe);
+      font-family:Arial, sans-serif;
+    }
+
+    .box{
+      background:white;
+      padding:40px;
+      border-radius:20px;
+      text-align:center;
+      box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    button{
+      margin:10px;
+      padding:12px 20px;
+      border:none;
+      border-radius:10px;
+      background:#3b5bff;
+      color:white;
+      cursor:pointer;
+      font-size:15px;
+    }
+
+    button:hover{
+      background:#2446d8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h2>JavaScript Popup Boxes</h2>
+
+    <button onclick="alertBox()">Alert Box</button>
+
+    <button onclick="confirmBox()">Confirm Box</button>
+
+    <button onclick="promptBox()">Prompt Box</button>
+
+    <p id="result"></p>
+  </div>
+
+  <script>
+    function alertBox(){
+      alert("This is an Alert Box!");
+    }
+
+    function confirmBox(){
+      let text;
+
+      if(confirm("Do you want to continue?")){
+        text = "You pressed OK";
+      } else {
+        text = "You pressed Cancel";
+      }
+
+      document.getElementById("result").innerHTML = text;
+    }
+
+    function promptBox(){
+      let name = prompt("Enter your name:");
+
+      if(name != null && name != ""){
+        document.getElementById("result").innerHTML =
+        "Hello " + name + " 👋";
+      }
+    }
+  </script>
+
+</body>
+</html>

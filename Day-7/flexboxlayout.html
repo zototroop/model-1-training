@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flexbox Layout</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-blue-700 text-white p-6 text-4xl font-bold">
+    My Flexbox Layout
+  </header>
+
+  <!-- Main Layout -->
+  <div class="flex flex-col md:flex-row min-h-screen">
+
+    <!-- Sidebar -->
+    <aside class="bg-gray-800 text-white w-full md:w-64 p-8 space-y-6 text-2xl">
+      <a href="#" class="block hover:text-blue-400">Home</a>
+      <a href="#" class="block hover:text-blue-400">About</a>
+      <a href="#" class="block hover:text-blue-400">Services</a>
+      <a href="#" class="block hover:text-blue-400">Contact</a>
+    </aside>
+
+    <!-- Content -->
+    <main class="flex-1 p-10 bg-green-50">
+
+      <div class="bg-white p-8 rounded-xl shadow-lg max-w-2xl">
+        
+        <h1 class="text-black inline-block px-4 py-2 text-4xl font-bold mb-6">
+          Welcome
+        </h1>
+
+        <p class="text-black inline-block px-4 py-2 text-xl rounded">
+          This is a responsive flexbox layout built with Tailwind CSS.
+        </p>
+
+      </div>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
